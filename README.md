@@ -1,7 +1,6 @@
 # solidpay-php-client
 
 `solidpay-php-client` is a official client for Solidpay. The Solidpay API enables you to accept payments in a secure and reliable manner. 
-
 # Installation
 ### Composer
 Simply add a dependency on solidpay/solidpay-php-client to your project's composer.json file if you use Composer to manage the dependencies of your project. Here is a minimal example of a composer.json file that just defines a dependency on newest stable version of Solidpay:
