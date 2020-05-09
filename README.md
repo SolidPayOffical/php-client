@@ -41,8 +41,8 @@ $form = array(
 );
 
 $payments = $client->request->post('/payments/', $form);
+
 $status = $payments->httpStatus();
-print_r($payments);
 
 } catch (Exception $e) {
     echo $e;
@@ -70,12 +70,14 @@ $payments = $client->request->get('/payments/{id}');
 
 // Capture payment
 $form = array(
-    'amount' => $order_id,
+    'amount' => '100',
 );
 
 $payments = $client->request->post('/payments/{id}/capture', $form);
+
 $status = $payments->httpStatus();
 if ($status == 201) {
     // Successful created
 }
+
 ```
