@@ -80,4 +80,11 @@ if ($status == 201) {
     // Successful created
 }
 
+// Refund payment
+$form = array(
+    'amount' => '100',
+);
+
+$payments = $client->request->post('/payments/{id}/refund', $form);
+
 ```
