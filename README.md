@@ -45,7 +45,7 @@ $payments = $client->request->post('/payments/', $form);
 $status = $payments->httpStatus();
 
 } catch (Exception $e) {
-    echo $e;
+    print_r($e);
 }
 ```
 
@@ -68,6 +68,13 @@ $payments = $client->request->get('/payments');
 // Get specific payment
 $payments = $client->request->get('/payments/{id}');
 
+// Refund payment
+$form = array(
+    'amount' => '100',
+);
+
+$payments = $client->request->post('/payments/{id}/refund', $form);
+
 // Capture payment
 $form = array(
     'amount' => '100',
@@ -79,12 +86,5 @@ $status = $payments->httpStatus();
 if ($status == 201) {
     // Successful created
 }
-
-// Refund payment
-$form = array(
-    'amount' => '100',
-);
-
-$payments = $client->request->post('/payments/{id}/refund', $form);
 
 ```
