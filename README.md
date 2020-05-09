@@ -28,13 +28,15 @@ use Solidpay\Solidpay;
 try {
 
 $api_key = 'YOUR_KEY';
-$client = new Solidpay($api_key);
+$merchant_id = 'YOUR_MERCHANT_ID';
+
+$client = new Solidpay($api_key, $merchant_id);
 
 $form = array(
-    'merchant' => 'YOUR_MERCHANT_ID',
     'order_id' => 'YOUR_TRANSACTION_ID',
     'currency' => 'gbp',
     'amount' => '100',
+    'capture' => false,
     'return_url' => 'https://example.com/success/123456'
 );
 
@@ -69,7 +71,6 @@ $payments = $client->request->get('/payments/{id}');
 // Capture payment
 $form = array(
     'amount' => $order_id,
-    'merchant' => 'YOUR_MERCHANT_ID',
 );
 
 $payments = $client->request->post('/payments/{id}/capture', $form);
