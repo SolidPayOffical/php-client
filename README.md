@@ -59,7 +59,7 @@ If the payload was successful, you will get a success response like the one belo
 }
 ```
 ### API Calls
-You can afterwards call any method described in Solidpay api with corresponding http method and endpoint. These methods are supported currently: <code>get</code>, <code>post</code>, <code>put</code>, <code>patch</code> and <code>delete</code>.
+You can afterwards call any method described in Solidpay api with corresponding http method and endpoint. These methods are supported currently: <code>get</code>, <code>post</code>, <code>put</code>, <code>patch</code> and <code>delete</code>. For full list of API calls you can find all examples in <a href="https://github.com/SolidPayOffical/postman-api">Postman collection</a>.
 
 ```php
 // Get all payments
