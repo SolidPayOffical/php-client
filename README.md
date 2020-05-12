@@ -46,8 +46,8 @@ $status = $payments->httpStatus();
 
 if ($status == 200){
     $payments = $payments->asArray();
-    $paymentUrl = $payments['url']; //payment_url
-    $paymentId = $payments['id']; //payment_id
+    $paymentUrl = $payments['url'];
+    $paymentId = $payments['id'];
 }
 
 } catch (Exception $e) {
