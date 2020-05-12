@@ -88,9 +88,4 @@ $form = array(
 
 $payments = $client->request->post('/payments/{id}/capture', $form);
 
-$status = $payments->httpStatus();
-if ($status == 201) {
-    // Successful created
-}
-
 ```
