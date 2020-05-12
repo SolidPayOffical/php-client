@@ -44,6 +44,12 @@ $payments = $client->request->post('/payments/', $form);
 
 $status = $payments->httpStatus();
 
+if ($status == 200){
+    $payments = $payments->asArray();
+    $paymentUrl = $payments['url']; //payment_url
+    $paymentId = $payments['id']; //payment_id
+}
+
 } catch (Exception $e) {
     print_r($e);
 }
