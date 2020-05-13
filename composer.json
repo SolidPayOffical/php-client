@@ -10,7 +10,7 @@
             "email": "support@solidpay.io"
         }
     ],
-    "minimum-stability": "stable",
+    
     "require": {
         "php" : ">=5.3.0",
         "ext-curl": "*"
