@@ -51,7 +51,7 @@ if ($status == 200){
 }
 
 } catch (Exception $e) {
-    print_r($e);
+    
 }
 ```
 
