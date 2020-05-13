@@ -59,7 +59,7 @@ if ($status == 200){
 If the payload was successful, you will get a success response like the one below.
 ```json
 {
-    "status": "Success",
+    "status": "success",
     "id": "502244",
     "url": "https://solidpay.io/payments/bd1b9bc8c35df675a9b174d499aa7e2e4dfd1658fe8bbd4c4a94a247deb969f3"
 }
