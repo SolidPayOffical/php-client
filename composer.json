@@ -4,17 +4,18 @@
     "homepage": "https://github.com/SolidPayOffical/php-client",
     "type": "library",
     "license": "MIT",
+    "require": {
+        "php" : ">=5.3.0",
+        "ext-curl": "*"
+    },
+    
     "authors": [
         {
             "name": "Pijus Sauseris",
             "email": "support@solidpay.io"
         }
     ],
-    
-    "require": {
-        "php" : ">=5.3.0",
-        "ext-curl": "*"
-    },
+   
     "autoload": {
         "psr-4": {
             "Solidpay\\":"src/"
