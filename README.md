@@ -37,7 +37,7 @@ $form = array(
     'currency' => 'gbp',
     'amount' => '100',
     'capture' => false,
-    'return_url' => 'https://example.com/success/123456'
+    'return_url' => 'https://yourstore.com/success/123456'
 );
 
 $payments = $client->request->post('/payments/', $form);
